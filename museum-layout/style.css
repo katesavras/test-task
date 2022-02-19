@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  margin: 140px auto;
+  max-width: 1440px;
+}
+
+.title {
+  font-family: "Forum", cursive;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #9D8665;
+}
+
+.title-underline {
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+  margin-top: 25px;
+}
+
+.cards-wrapper {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 60px 75px;
+}
+
+.card__img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.card__title {
+  font-family: "Forum", cursive;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  line-height: 35px;
+  color: #030303;
+}
+
+.card__underline {
+  width: 68%;
+  height: 2px;
+  background-color: #710707;
+  margin: 10px 0;
+}
+
+.card__view {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  color: #030303;
+  margin-bottom: 10px;
+}
+
+.card__map-view {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+@media (max-width: 1680px) {
+  .container {
+    margin: 70px auto;
+    max-width: 984px;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 75px;
+  }
+
+  .title-underline {
+    margin-top: 20px;
+  }
+
+  .cards-wrapper {
+    margin: 60px auto 0;
+    max-width: 768px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 60px 108px;
+  }
+
+  .card__title {
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 3px;
+  }
+
+  .card__underline {
+    max-width: 54%;
+  }
+
+  .card__view {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .card__map-view {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    margin: 60px auto;
+    max-width: 728px;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .cards-wrapper {
+    margin: 40px auto 0;
+    max-width: 616px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px 56px;
+  }
+
+  .card__title {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+
+  .card__view {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    margin: 60px auto;
+    max-width: 580px;
+  }
+
+  .cards-wrapper {
+    margin: 40px auto 0;
+    max-width: 440px;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    gap: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    margin: 42px auto;
+    max-width: 380px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .cards-wrapper {
+    margin: 40px auto 0;
+    max-width: 280px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+  }
+
+  .card__title {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 5px;
+  }
+
+  .card__view {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 410px) {
+  .container {
+    margin: 42px auto;
+    max-width: 280px;
+  }
+
+  .cards-wrapper {
+    margin: 40px auto 0;
+    max-width: 280px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
